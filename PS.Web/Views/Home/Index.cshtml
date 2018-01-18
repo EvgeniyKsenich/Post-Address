@@ -1,5 +1,32 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+@Scripts.Render("~/bundles/angular")
 
-<my-app>Загрузка...</my-app>
+
+<div ng-app="MyApp" ng-controller="ApiController">
+    <table class="table">
+        <tr>
+            <td></td>
+            <th>Id</th>
+            <th>Region</th>
+            <th>District</th>
+            <th>City</th>
+            <th>Indexx</th>
+            <th>Street</th>
+            <th>Houses</th>
+        </tr>
+        <tr ng-repeat="m in List">
+            <td><input type="button" class="btn btn-primary" value="next" ng-click="Delete($event)" id="delete_{{m.id}}" /></td>
+            <td>{{m.id}}</td>
+            <td>{{m.region}}</td>
+            <td>{{m.district}}</td>
+            <td>{{m.city}}</td>
+            <td>{{m.indexx}}</td>
+            <td>{{m.street}}</td>
+            <td>{{m.houses}}</td>
+        </tr>
+    </table>
+    <input type="button" value="next"  ng-click="GetNext()"/>
+</div>
+

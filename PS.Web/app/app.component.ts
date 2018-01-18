@@ -2,10 +2,11 @@
 
 @Component({
     selector: 'my-app',
-    template: `<h1>Добро пожаловать {{name}}!</h1>
-                <label>Введите имя:</label>
-                <input [(ngModel)]="name" placeholder="name">`
+    template: `<h1>Добро пожаловать {{name}}!</h1>`
 })
 export class AppComponent {
-    name = '';
+    name = 'Name';
+    items = new Array();
+
+    constructor() { };
 }
