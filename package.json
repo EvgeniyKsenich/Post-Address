@@ -1,0 +1,14 @@
+{
+  "name": "someProj",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {},
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "@angular/animations": "^5.2.1",
+    "@angular/core": "^5.2.1",
+    "rxjs": "^5.5.6",
+    "zone.js": "^0.8.20"
+  }
+}

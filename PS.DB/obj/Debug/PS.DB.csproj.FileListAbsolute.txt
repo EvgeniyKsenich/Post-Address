@@ -1,0 +1,252 @@
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\roslyn\csc.exe
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\roslyn\csc.exe.config
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\roslyn\csc.rsp
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\roslyn\csi.exe
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\roslyn\csi.rsp
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\roslyn\System.AppContext.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\roslyn\System.Collections.Immutable.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\roslyn\System.Diagnostics.StackTrace.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\roslyn\System.IO.FileSystem.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\roslyn\System.IO.FileSystem.Primitives.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\roslyn\vbc.exe
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\roslyn\vbc.exe.config
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\roslyn\vbc.rsp
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\roslyn\VBCSCompiler.exe
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\roslyn\VBCSCompiler.exe.config
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\PS.DB.dll.config
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\PS.DB.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\PS.DB.pdb
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\Antlr3.Runtime.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\AutoMapper.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\EntityFramework.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\EntityFramework.SqlServer.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\Microsoft.AI.Web.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\Microsoft.AI.WindowsServer.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\Microsoft.ApplicationInsights.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\Microsoft.Web.Infrastructure.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\Newtonsoft.Json.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\PS.Business.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\System.Web.Helpers.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\System.Web.Mvc.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\System.Web.Optimization.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\System.Web.Razor.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\System.Web.WebPages.Deployment.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\System.Web.WebPages.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\System.Web.WebPages.Razor.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\WebGrease.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\PS.Business.pdb
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\PS.Business.dll.config
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\AutoMapper.xml
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\EntityFramework.xml
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\EntityFramework.SqlServer.xml
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\System.Web.Helpers.xml
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\System.Web.Mvc.xml
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\System.Web.Optimization.xml
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\System.Web.Razor.xml
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\System.Web.WebPages.xml
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\System.Web.WebPages.Deployment.xml
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\System.Web.WebPages.Razor.xml
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\Antlr3.Runtime.pdb
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\Newtonsoft.Json.xml
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\Microsoft.ApplicationInsights.xml
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\Microsoft.AI.WindowsServer.xml
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\Microsoft.AI.Web.xml
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\ru\EntityFramework.resources.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\ru\EntityFramework.SqlServer.resources.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\ru\System.Web.Helpers.resources.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\ru\System.Web.Mvc.resources.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\ru\System.Web.Optimization.resources.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\ru\System.Web.Razor.resources.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\ru\System.Web.WebPages.resources.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\ru\System.Web.WebPages.Deployment.resources.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\bin\ru\System.Web.WebPages.Razor.resources.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\obj\Debug\PS.DB.csprojResolveAssemblyReference.cache
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\obj\Debug\PS.DB.dll
+c:\users\женя\documents\visual studio 2017\Projects\Post Address\PS.DB\obj\Debug\PS.DB.pdb
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\roslyn\csc.exe
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\roslyn\csc.exe.config
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\roslyn\csc.rsp
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\roslyn\csi.exe
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\roslyn\csi.rsp
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\roslyn\System.AppContext.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\roslyn\vbc.exe
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\roslyn\vbc.exe.config
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\roslyn\vbc.rsp
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\roslyn\VBCSCompiler.exe
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\PS.DB.dll.config
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\PS.DB.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\PS.DB.pdb
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\Antlr3.Runtime.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\AutoMapper.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\EntityFramework.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\EntityFramework.SqlServer.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\Microsoft.AI.Web.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\Newtonsoft.Json.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\PS.Business.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\System.Web.Helpers.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\System.Web.Mvc.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\System.Web.Optimization.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\System.Web.Razor.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\System.Web.WebPages.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\System.Web.WebPages.Razor.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\WebGrease.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\PS.Business.pdb
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\PS.Business.dll.config
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\AutoMapper.xml
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\EntityFramework.xml
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\EntityFramework.SqlServer.xml
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\System.Web.Helpers.xml
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\System.Web.Mvc.xml
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\System.Web.Optimization.xml
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\System.Web.Razor.xml
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\System.Web.WebPages.xml
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\System.Web.WebPages.Razor.xml
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\Antlr3.Runtime.pdb
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\Newtonsoft.Json.xml
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\Microsoft.AI.Web.xml
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\ru\EntityFramework.resources.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\ru\System.Web.Helpers.resources.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\ru\System.Web.Mvc.resources.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\ru\System.Web.Optimization.resources.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\ru\System.Web.Razor.resources.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\ru\System.Web.WebPages.resources.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\ru\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\bin\ru\System.Web.WebPages.Razor.resources.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\obj\Debug\PS.DB.csprojResolveAssemblyReference.cache
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\obj\Debug\PS.DB.dll
+C:\Users\Женя\Documents\Visual Studio 2017\Projects\Address\Post Address\PS.DB\obj\Debug\PS.DB.pdb
+D:\Proj\Post-Address\PS.DB\bin\roslyn\csc.exe
+D:\Proj\Post-Address\PS.DB\bin\roslyn\csc.exe.config
+D:\Proj\Post-Address\PS.DB\bin\roslyn\csc.rsp
+D:\Proj\Post-Address\PS.DB\bin\roslyn\csi.exe
+D:\Proj\Post-Address\PS.DB\bin\roslyn\csi.rsp
+D:\Proj\Post-Address\PS.DB\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Proj\Post-Address\PS.DB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Proj\Post-Address\PS.DB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Proj\Post-Address\PS.DB\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Proj\Post-Address\PS.DB\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Proj\Post-Address\PS.DB\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Proj\Post-Address\PS.DB\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Proj\Post-Address\PS.DB\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Proj\Post-Address\PS.DB\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Proj\Post-Address\PS.DB\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Proj\Post-Address\PS.DB\bin\roslyn\System.AppContext.dll
+D:\Proj\Post-Address\PS.DB\bin\roslyn\System.Collections.Immutable.dll
+D:\Proj\Post-Address\PS.DB\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Proj\Post-Address\PS.DB\bin\roslyn\System.IO.FileSystem.dll
+D:\Proj\Post-Address\PS.DB\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Proj\Post-Address\PS.DB\bin\roslyn\System.Reflection.Metadata.dll
+D:\Proj\Post-Address\PS.DB\bin\roslyn\vbc.exe
+D:\Proj\Post-Address\PS.DB\bin\roslyn\vbc.exe.config
+D:\Proj\Post-Address\PS.DB\bin\roslyn\vbc.rsp
+D:\Proj\Post-Address\PS.DB\bin\roslyn\VBCSCompiler.exe
+D:\Proj\Post-Address\PS.DB\bin\roslyn\VBCSCompiler.exe.config
+D:\Proj\Post-Address\PS.DB\bin\PS.DB.dll.config
+D:\Proj\Post-Address\PS.DB\bin\PS.DB.dll
+D:\Proj\Post-Address\PS.DB\bin\PS.DB.pdb
+D:\Proj\Post-Address\PS.DB\bin\Antlr3.Runtime.dll
+D:\Proj\Post-Address\PS.DB\bin\AutoMapper.dll
+D:\Proj\Post-Address\PS.DB\bin\EntityFramework.dll
+D:\Proj\Post-Address\PS.DB\bin\EntityFramework.SqlServer.dll
+D:\Proj\Post-Address\PS.DB\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Proj\Post-Address\PS.DB\bin\Microsoft.AI.DependencyCollector.dll
+D:\Proj\Post-Address\PS.DB\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Proj\Post-Address\PS.DB\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Proj\Post-Address\PS.DB\bin\Microsoft.AI.Web.dll
+D:\Proj\Post-Address\PS.DB\bin\Microsoft.AI.WindowsServer.dll
+D:\Proj\Post-Address\PS.DB\bin\Microsoft.ApplicationInsights.dll
+D:\Proj\Post-Address\PS.DB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Proj\Post-Address\PS.DB\bin\Microsoft.Web.Infrastructure.dll
+D:\Proj\Post-Address\PS.DB\bin\Newtonsoft.Json.dll
+D:\Proj\Post-Address\PS.DB\bin\PS.Business.dll
+D:\Proj\Post-Address\PS.DB\bin\System.Web.Helpers.dll
+D:\Proj\Post-Address\PS.DB\bin\System.Web.Mvc.dll
+D:\Proj\Post-Address\PS.DB\bin\System.Web.Optimization.dll
+D:\Proj\Post-Address\PS.DB\bin\System.Web.Razor.dll
+D:\Proj\Post-Address\PS.DB\bin\System.Web.WebPages.Deployment.dll
+D:\Proj\Post-Address\PS.DB\bin\System.Web.WebPages.dll
+D:\Proj\Post-Address\PS.DB\bin\System.Web.WebPages.Razor.dll
+D:\Proj\Post-Address\PS.DB\bin\WebGrease.dll
+D:\Proj\Post-Address\PS.DB\bin\PS.Business.pdb
+D:\Proj\Post-Address\PS.DB\bin\PS.Business.dll.config
+D:\Proj\Post-Address\PS.DB\bin\AutoMapper.xml
+D:\Proj\Post-Address\PS.DB\bin\EntityFramework.xml
+D:\Proj\Post-Address\PS.DB\bin\EntityFramework.SqlServer.xml
+D:\Proj\Post-Address\PS.DB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Proj\Post-Address\PS.DB\bin\System.Web.Helpers.xml
+D:\Proj\Post-Address\PS.DB\bin\System.Web.Mvc.xml
+D:\Proj\Post-Address\PS.DB\bin\System.Web.Optimization.xml
+D:\Proj\Post-Address\PS.DB\bin\System.Web.Razor.xml
+D:\Proj\Post-Address\PS.DB\bin\System.Web.WebPages.xml
+D:\Proj\Post-Address\PS.DB\bin\System.Web.WebPages.Deployment.xml
+D:\Proj\Post-Address\PS.DB\bin\System.Web.WebPages.Razor.xml
+D:\Proj\Post-Address\PS.DB\bin\Antlr3.Runtime.pdb
+D:\Proj\Post-Address\PS.DB\bin\Newtonsoft.Json.xml
+D:\Proj\Post-Address\PS.DB\bin\Microsoft.ApplicationInsights.xml
+D:\Proj\Post-Address\PS.DB\bin\Microsoft.AI.DependencyCollector.xml
+D:\Proj\Post-Address\PS.DB\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Proj\Post-Address\PS.DB\bin\Microsoft.AI.WindowsServer.xml
+D:\Proj\Post-Address\PS.DB\bin\Microsoft.AI.Web.xml
+D:\Proj\Post-Address\PS.DB\bin\ru\EntityFramework.resources.dll
+D:\Proj\Post-Address\PS.DB\bin\ru\EntityFramework.SqlServer.resources.dll
+D:\Proj\Post-Address\PS.DB\bin\ru\System.Web.Helpers.resources.dll
+D:\Proj\Post-Address\PS.DB\bin\ru\System.Web.Mvc.resources.dll
+D:\Proj\Post-Address\PS.DB\bin\ru\System.Web.Optimization.resources.dll
+D:\Proj\Post-Address\PS.DB\bin\ru\System.Web.Razor.resources.dll
+D:\Proj\Post-Address\PS.DB\bin\ru\System.Web.WebPages.resources.dll
+D:\Proj\Post-Address\PS.DB\bin\ru\System.Web.WebPages.Deployment.resources.dll
+D:\Proj\Post-Address\PS.DB\bin\ru\System.Web.WebPages.Razor.resources.dll
+D:\Proj\Post-Address\PS.DB\obj\Debug\PS.DB.csprojResolveAssemblyReference.cache
+D:\Proj\Post-Address\PS.DB\obj\Debug\PS.DB.dll
+D:\Proj\Post-Address\PS.DB\obj\Debug\PS.DB.pdb

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище AddressModelContainer" CdmEntityContainer="AddressEntities">
+    <EntitySetMapping Name="Items">
+      <EntityTypeMapping TypeName="AddressModel.Items">
+        <MappingFragment StoreEntitySet="Items">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="region" ColumnName="region" />
+          <ScalarProperty Name="district" ColumnName="district" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="indexx" ColumnName="indexx" />
+          <ScalarProperty Name="street" ColumnName="street" />
+          <ScalarProperty Name="houses" ColumnName="houses" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
