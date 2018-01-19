@@ -5,8 +5,9 @@
 
 
 <div ng-app="MyApp" ng-controller="ApiController">
-    <table class="table">
+    <table class="table table-custom">
         <tr>
+            <td></td>
             <td></td>
             <th>Id</th>
             <th>Region</th>
@@ -17,7 +18,8 @@
             <th>Houses</th>
         </tr>
         <tr ng-repeat="m in List">
-            <td><input type="button" class="btn btn-primary" value="next" ng-click="Delete($event)" id="delete_{{m.id}}" /></td>
+            <td><input type="button" class="btn btn-primary" value="Delete" ng-click="Delete($event)" id="delete_{{m.id}}" /></td>
+            <td><input type="button" class="btn btn-primary" value="Edit" ng-click="Edit($event)" id="edit_{{m.id}}" /></td>
             <td>{{m.id}}</td>
             <td>{{m.region}}</td>
             <td>{{m.district}}</td>
@@ -27,6 +29,6 @@
             <td>{{m.houses}}</td>
         </tr>
     </table>
-    <input type="button" value="next"  ng-click="GetNext()"/>
+    <input type="button" class="btn btn-primary" value="next"  ng-click="GetNext()"/>
 </div>
 

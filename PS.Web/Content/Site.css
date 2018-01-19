@@ -22,3 +22,9 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.table-custom {
+    display: inline-block;
+    overflow: scroll;
+    max-height: 400px;
+}

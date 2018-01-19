@@ -20,11 +20,6 @@ app.controller('ApiController', function ($scope, $http, $window) {
             }
             $scope.Current += $scope.Size;
 
-            console.log("response:");
-            console.log(response);
-            console.log("List: ");
-            console.log($scope.List);
-
         }, function myError(response) {
             $window.alert(response.Message);
         });
@@ -32,16 +27,24 @@ app.controller('ApiController', function ($scope, $http, $window) {
 
     $scope.Delete = function ($event) {
         var id = $event.target.id.split('_')[1];
+        var index = -1;
+        for (var i = 0; i < $scope.List.length; i++) {
+            if ($scope.List[i].id == id) {
+                index = i;
+                break;
+            }
+        }
+
         $http({
             method: "DELETE",
-            url: "/api/Address",
+            url: "/api/Address/" + id,
             dataType: 'json',
-            data: id,
             headers: { "Content-Type": "application/json" }
         }).then(function mySuccess(response) {
-
+            $scope.List.splice(index, 1);
+            console.log("Deleted  id:" + id + "; By index:" + index);
         }, function myError(response) {
-            
+            $window.alert(response.Message);
         });
     }
 
