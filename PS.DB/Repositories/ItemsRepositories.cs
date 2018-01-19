@@ -90,10 +90,13 @@ namespace PS.DB.Repositories
         public int Edit(Item item)
         {
             int result = 0;
-            using (AddressEntities db = new AddressEntities())
+            if (item != null)
             {
-                db.Entry(item).State = EntityState.Modified;
-                result = db.SaveChanges();
+                using (AddressEntities db = new AddressEntities())
+                {
+                    db.Entry(Mapper.Map<Items>(item)).State = EntityState.Modified;
+                    result = db.SaveChanges();
+                }
             }
             return result;
         }

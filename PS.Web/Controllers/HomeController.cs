@@ -21,15 +21,5 @@ namespace PS.Web.Controllers
         {
             return View();
         }
-
-        public string List()
-        {
-            var List = CSVReader.GetList(@"C:\Users\Женя\Documents\Visual Studio 2017\Projects\Post Address\res\houses.csv");
-            foreach(var item in List)
-            {
-                ItemRepositories.Save(item);
-            }
-            return "sucess";
-        }
     }
 }
