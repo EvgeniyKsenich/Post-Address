@@ -2,6 +2,8 @@
 
 import { Input, OnInit, AfterViewChecked } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Item } from './models/Item';
+
 declare var $: any;
 
 @Component({
@@ -12,22 +14,15 @@ declare var $: any;
 
 export class AppComponent {
     List = new Array();
-    item : {
-        id: number,
-        region: string,
-        district: string,
-        city: string,
-        indexx: string,
-        street: string,
-        houses: string
-    }
+    public item: Item;
 
     constructor() {
-        this.ClearItem();
-        //this.List[0].push(this.item);
+        this.item = new Item();
+        this.Clearitem();
+        this.List.push(this.item);
     }
 
-    public EditNew(id:number) {
+    public EditNew(id: number) {
         var index = -1;
         for (var i = 0; i < this.List.length; i++) {
             if (this.List[i].id == id) {
@@ -41,25 +36,22 @@ export class AppComponent {
     }
 
     AddNew() {
-        this.ClearItem();
+        this.Clearitem();
         $("#Add").modal();
     }
 
     FindNew() {
-        this.ClearItem();
+        this.Clearitem();
         $("#Find").modal();
     }
 
-    ClearItem() {
-        this.item = {
-            id: 2,
-            region: "",
-            district: "",
-            city: "",
-            indexx: "",
-            street: "",
-            houses: ""
-        }
+    Clearitem() {
+        this.item.id = 0;
+        this.item.region = "";
+        this.item.district = "";
+        this.item.city = "";
+        this.item.indexx = "";
+        this.item.street = "";
+        this.item.houses = "";
     }
-
 }

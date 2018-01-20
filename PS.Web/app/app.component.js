@@ -10,11 +10,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var Item_1 = require("./models/Item");
 var AppComponent = (function () {
     function AppComponent() {
         this.List = new Array();
-        this.ClearItem();
-        //this.List[0].push(this.item);
+        this.item = new Item_1.Item();
+        this.Clearitem();
+        this.List.push(this.item);
     }
     AppComponent.prototype.EditNew = function (id) {
         var index = -1;
@@ -28,23 +30,21 @@ var AppComponent = (function () {
         $("#Edit").modal();
     };
     AppComponent.prototype.AddNew = function () {
-        this.ClearItem();
+        this.Clearitem();
         $("#Add").modal();
     };
     AppComponent.prototype.FindNew = function () {
-        this.ClearItem();
+        this.Clearitem();
         $("#Find").modal();
     };
-    AppComponent.prototype.ClearItem = function () {
-        this.item = {
-            id: 2,
-            region: "",
-            district: "",
-            city: "",
-            indexx: "",
-            street: "",
-            houses: ""
-        };
+    AppComponent.prototype.Clearitem = function () {
+        this.item.id = 0;
+        this.item.region = "";
+        this.item.district = "";
+        this.item.city = "";
+        this.item.indexx = "";
+        this.item.street = "";
+        this.item.houses = "";
     };
     return AppComponent;
 }());

@@ -1039,6 +1039,8 @@
     <TypeScriptCompile Include="app\main.ts" />
     <TypeScriptCompile Include="app\app.component.ts" />
     <TypeScriptCompile Include="app\app.module.ts" />
+    <TypeScriptCompile Include="app\models\Item.ts" />
+    <TypeScriptCompile Include="app\Services\ItemService.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
