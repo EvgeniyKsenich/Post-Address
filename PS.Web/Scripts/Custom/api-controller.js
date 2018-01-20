@@ -1,4 +1,4 @@
-﻿var app = angular.module('MyApp', [])
+﻿var app = angular.module('MyApp', []);
 app.controller('ApiController', function ($scope, $http, $window) {
     $scope.List = [];
     $scope.Current = 0;
@@ -22,10 +22,10 @@ app.controller('ApiController', function ($scope, $http, $window) {
             headers: { "Content-Type": "application/json" }
         }).then(function mySuccess(response) {
 
-            if ($scope.Current == 0)
+            if ($scope.Current === 0)
                 $scope.List = response.data;
             else {
-                for (var i = 0; i < response.data.length;i++)
+                for (var i = 0; i < response.data.length; i++)
                     $scope.List.push(response.data[i]);
             }
             $scope.Current += $scope.Size;
@@ -33,13 +33,13 @@ app.controller('ApiController', function ($scope, $http, $window) {
         }, function myError(response) {
             $window.alert(response.Message);
         });
-    }
+    };
 
     $scope.Delete = function ($event) {
         var id = $event.target.id.split('_')[1];
         var index = -1;
         for (var i = 0; i < $scope.List.length; i++) {
-            if ($scope.List[i].id == id) {
+            if ($scope.List[i].id === id) {
                 index = i;
                 break;
             }
@@ -56,13 +56,13 @@ app.controller('ApiController', function ($scope, $http, $window) {
         }, function myError(response) {
             $window.alert(response.Message);
         });
-    }
+    };
 
     $scope.Edit = function ($event) {
         var id = $event.target.id.split('_')[1];
         var index = -1;
         for (var i = 0; i < $scope.List.length; i++) {
-            if ($scope.List[i].id == id) {
+            if ($scope.List[i].id === id) {
                 index = i;
                 break;
             }
@@ -71,7 +71,7 @@ app.controller('ApiController', function ($scope, $http, $window) {
         $scope.item = $scope.List[index];
         console.log($scope.List[index]);
         $("#Edit").modal();
-    }
+    };
 
     $scope.SaveEdit = function ($event) {
         console.log($scope.item);
@@ -88,7 +88,7 @@ app.controller('ApiController', function ($scope, $http, $window) {
         }, function myError(response) {
             $window.alert(response.Message);
         });
-    }
+    };
 
     $scope.Add = function ($event) {
         $scope.item.id = "";
@@ -105,12 +105,12 @@ app.controller('ApiController', function ($scope, $http, $window) {
         }, function myError(response) {
             $window.alert(response.Message);
         });
-    }
+    };
 
     $scope.AddNew = function ($event) {
         $scope.ClearItem();
         $("#Add").modal();
-    }
+    };
 
     $scope.Find = function ($event) {
         $http({
@@ -125,12 +125,12 @@ app.controller('ApiController', function ($scope, $http, $window) {
             $window.alert(response.Message);
             console.log(response);
         });
-    }
+    };
 
     $scope.FindNew = function ($event) {
         $scope.ClearItem();
         $("#Find").modal();
-    }
+    };
 
     $scope.ClearItem = function () {
         $scope.item = {
@@ -142,7 +142,7 @@ app.controller('ApiController', function ($scope, $http, $window) {
             street: '',
             houses: ''
         };
-    }
+    };
 
 
     
