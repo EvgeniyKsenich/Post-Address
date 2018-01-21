@@ -1,0 +1,187 @@
+<input type="button" class="btn btn-primary" value="Add new" (click)="AddNew($event)" id="AddNew" />
+<input type="button" class="btn btn-primary" value="Find" (click)="FindNew($event)" id="FindNew" />
+<table class="table table-custom">
+    <tr>
+        <td></td>
+        <td></td>
+        <th>Id</th>
+        <th>Region</th>
+        <th>District</th>
+        <th>City</th>
+        <th>Indexx</th>
+        <th>Street</th>
+        <th>Houses</th>
+    </tr>
+    <tr *ngFor="let m of List">
+        <td><input type="button" class="btn btn-primary" value="Delete" (click)="Delete($event)" id="delete_{{m.id}}" /></td>
+        <td><input type="button" class="btn btn-primary" value="Edit" (click)="EditNew(m.id)" id="edit_{{m.id}}" /></td>
+        <td>{{m.id}}</td>
+        <td>{{m.region}}</td>
+        <td>{{m.district}}</td>
+        <td>{{m.city}}</td>
+        <td>{{m.indexx}}</td>
+        <td>{{m.street}}</td>
+        <td>{{m.houses}}</td>
+    </tr>
+</table>
+<input type="button" class="btn btn-primary" value="next" (click)="GetNext()" />
+
+
+
+<!-- Modal -->
+<!-- Edit -->
+<div class="modal fade" id="Edit" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Edit</h4>
+            </div>
+            <div class="modal-body modal-center">
+                <table>
+                    <tr>
+                        <td>Id:</td>
+                        <td>{{item.id}}</td>
+                    </tr>
+                    <tr>
+                        <td>Region:</td>
+                        <td><input type="text" class="form-control" ngModel name="{[item.region]}" required ng-trim="false"></td>
+                    </tr>
+                    <tr>
+                        <td>District:</td>
+                        <td><input type="text" class="form-control" ngModel name="item.district" required ng-trim="false"></td>
+                    </tr>
+                    <tr>
+                        <td>City:</td>
+                        <td><input type="text" class="form-control" ngModel name="item.city" required ng-trim="false"></td>
+                    </tr>
+                    <tr>
+                        <td>Index:</td>
+                        <td><input type="text" class="form-control" ngModel name="item.indexx" required ng-trim="false"></td>
+                    </tr>
+                    <tr>
+                        <td>Street:</td>
+                        <td><input type="text" class="form-control" ngModel name="item.street" required ng-trim="false"></td>
+                    </tr>
+                    <tr>
+                        <td>Houses:</td>
+                        <td><input type="text" class="form-control" ngModel name="item.houses" required ng-trim="false"></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></td>
+                        <td class="right"><input type="button" class="btn btn-primary" value="Edit" (click)="SaveEdit($event)" id="SaveEdit" /></td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Add -->
+<div class="modal fade" id="Add" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Add</h4>
+            </div>
+            <div class="modal-body modal-center">
+                <table>
+                    <tr>
+                        <td>Region:</td>
+                        <td><input type="text" class="form-control" name="input" ng-model="item.region" required ng-trim="false"></td>
+                    </tr>
+                    <tr>
+                        <td>District:</td>
+                        <td><input type="text" class="form-control" name="input" ng-model="item.district" required ng-trim="false"></td>
+                    </tr>
+                    <tr>
+                        <td>City:</td>
+                        <td><input type="text" class="form-control" name="input" ng-model="item.city" required ng-trim="false"></td>
+                    </tr>
+                    <tr>
+                        <td>Index:</td>
+                        <td><input type="text" class="form-control" name="input" ng-model="item.indexx" required ng-trim="false"></td>
+                    </tr>
+                    <tr>
+                        <td>Street:</td>
+                        <td><input type="text" class="form-control" name="input" ng-model="item.street" required ng-trim="false"></td>
+                    </tr>
+                    <tr>
+                        <td>Houses:</td>
+                        <td><input type="text" class="form-control" name="input" ng-model="item.houses" required ng-trim="false"></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></td>
+                        <td class="right"><input type="button" class="btn btn-primary" value="Edit" (click)="Add($event)" id="AddNew" /></td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Find -->
+<div class="modal fade" id="Find" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Find</h4>
+            </div>
+            <div class="modal-body modal-center">
+                <table>
+                    <tr>
+                        <td>Id:</td>
+                        <td><input type="text" class="form-control" name="input" ng-model="item.id" required ng-trim="false"></td>
+                    </tr>
+                    <tr>
+                        <td>Region:</td>
+                        <td>{{item.region}}</td>
+                    </tr>
+                    <tr>
+                        <td>District:</td>
+                        <td>{{item.district}}</td>
+                    </tr>
+                    <tr>
+                        <td>City:</td>
+                        <td>{{item.city}}</td>
+                    </tr>
+                    <tr>
+                        <td>Index:</td>
+                        <td>{{item.indexx}}</td>
+                    </tr>
+                    <tr>
+                        <td>Street:</td>
+                        <td>{{item.street}}</td>
+                    </tr>
+                    <tr>
+                        <td>Houses:</td>
+                        <td>{{item.houses}}</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td></td>
+                        <td class="right"><input type="button" class="btn btn-primary" value="Find" (click)="Find($event)" id="FindNew" /></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
