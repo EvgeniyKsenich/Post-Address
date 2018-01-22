@@ -12,11 +12,9 @@ namespace PS.Web_Angular5.Controllers
     public class AddressController : ApiController
     {
         private static IItems<Item> ItemRepositories;
-        //public AddressController(ItemsRepositories _ItemRepositories)
-        public AddressController()
+        public AddressController(ItemsRepositories _ItemRepositories)
         {
-            ItemRepositories = new ItemsRepositories();
-            //ItemRepositories = _ItemRepositories;
+            ItemRepositories = _ItemRepositories;
         }
 
         // GET: api/Address

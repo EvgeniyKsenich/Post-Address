@@ -10,7 +10,11 @@ using PS.Web_Angular5.Util;
 using System.Web.Mvc;
 using Ninject.Modules;
 using Ninject;
-using Ninject.Web.Mvc;
+using Ninject.Web.WebApi;
+using Unity;
+using PS.DB.Repositories;
+using PS.Business.Enteties;
+using Unity.Lifetime;
 
 namespace PS.Web_Angular5
 {
@@ -26,9 +30,13 @@ namespace PS.Web_Angular5
 
             Helpers.AutoMapper.Init();
 
-            NinjectModule registrations = new NinjectRegistrations();
-            var kernel = new StandardKernel(registrations);
-            DependencyResolver.SetResolver(new NinjectDependencyResolver(kernel));
+            var container = new UnityContainer();
+            container.RegisterType<IItems<Item>, ItemsRepositories>(new HierarchicalLifetimeManager());
+            GlobalConfiguration.Configuration.DependencyResolver = new UnityResolver(container);
+
+            //NinjectModule registrations = new NinjectRegistrations();
+            //var kernel = new StandardKernel(registrations);
+            //GlobalConfiguration.Configuration.DependencyResolver = new NinjectDependencyResolver(kernel);
         }
     }
 }
