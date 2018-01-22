@@ -6,13 +6,11 @@ using System.Web.Http;
 using System.Web.Optimization;
 using System.Web.Routing;
 using Ninject.Web.Common.WebHost;
-
 using PS.Web_Angular5.Util;
-
-using Ninject.Web.WebApi;
 using System.Web.Mvc;
 using Ninject.Modules;
 using Ninject;
+using Ninject.Web.Mvc;
 
 namespace PS.Web_Angular5
 {

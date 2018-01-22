@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Ninject;
+using Ninject.Web.WebApi;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
@@ -16,6 +18,9 @@ namespace PS.Web_Angular5
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            //var kernel = new StandardKernel();
+            //config.DependencyResolver = new NinjectDependencyResolver(kernel);
         }
     }
 }
