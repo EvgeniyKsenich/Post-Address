@@ -12,9 +12,9 @@ namespace PS.Web.Controllers
     public class AddressController : ApiController
     {
         private static IItems<Item> ItemRepositories;
-        public AddressController()
+        public AddressController(ItemsRepositories _ItemRepositories)
         {
-            ItemRepositories = new ItemsRepositories();
+            ItemRepositories = _ItemRepositories;
         }
 
         // GET: api/Address
