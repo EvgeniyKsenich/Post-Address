@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace PS.Web.Helpers
+namespace PS.Web_Angular5.Helpers
 {
     public class AutoMapper
     {

@@ -13,7 +13,7 @@
         <th>Houses</th>
     </tr>
     <tr *ngFor="let m of List">
-        <td><input type="button" class="btn btn-primary" value="Delete" (click)="Delete($event)" id="delete_{{m.id}}" /></td>
+        <td><input type="button" class="btn btn-primary" value="Delete" (click)="Delete(m)" id="delete_{{m.id}}" /></td>
         <td><input type="button" class="btn btn-primary" value="Edit" (click)="EditNew(m.id)" id="edit_{{m.id}}" /></td>
         <td>{{m.id}}</td>
         <td>{{m.region}}</td>
@@ -45,27 +45,27 @@
                     </tr>
                     <tr>
                         <td>Region:</td>
-                        <td><input type="text" class="form-control" ngModel name="{[item.region]}" required ng-trim="false"></td>
+                        <td><input type="text" class="form-control" [(ngModel)]="item.region" required></td>
                     </tr>
                     <tr>
                         <td>District:</td>
-                        <td><input type="text" class="form-control" ngModel name="item.district" required ng-trim="false"></td>
+                        <td><input type="text" class="form-control" [(ngModel)]="item.district" required></td>
                     </tr>
                     <tr>
                         <td>City:</td>
-                        <td><input type="text" class="form-control" ngModel name="item.city" required ng-trim="false"></td>
+                        <td><input type="text" class="form-control" [(ngModel)]="item.city" requireds></td>
                     </tr>
                     <tr>
                         <td>Index:</td>
-                        <td><input type="text" class="form-control" ngModel name="item.indexx" required ng-trim="false"></td>
+                        <td><input type="text" class="form-control" [(ngModel)]="item.indexx" required ng-trim="false"></td>
                     </tr>
                     <tr>
                         <td>Street:</td>
-                        <td><input type="text" class="form-control" ngModel name="item.street" required ng-trim="false"></td>
+                        <td><input type="text" class="form-control" [(ngModel)]="item.street" required ng-trim="false"></td>
                     </tr>
                     <tr>
                         <td>Houses:</td>
-                        <td><input type="text" class="form-control" ngModel name="item.houses" required ng-trim="false"></td>
+                        <td><input type="text" class="form-control" [(ngModel)]="item.houses" required ng-trim="false"></td>
                     </tr>
                     <tr></tr>
                     <tr>
@@ -96,27 +96,27 @@
                 <table>
                     <tr>
                         <td>Region:</td>
-                        <td><input type="text" class="form-control" name="input" ng-model="item.region" required ng-trim="false"></td>
+                        <td><input type="text" class="form-control" [(ngModel)]="item.region" required ng-trim="false"></td>
                     </tr>
                     <tr>
                         <td>District:</td>
-                        <td><input type="text" class="form-control" name="input" ng-model="item.district" required ng-trim="false"></td>
+                        <td><input type="text" class="form-control" [(ngModel)]="item.district" required ng-trim="false"></td>
                     </tr>
                     <tr>
                         <td>City:</td>
-                        <td><input type="text" class="form-control" name="input" ng-model="item.city" required ng-trim="false"></td>
+                        <td><input type="text" class="form-control" [(ngModel)]="item.city" required ng-trim="false"></td>
                     </tr>
                     <tr>
                         <td>Index:</td>
-                        <td><input type="text" class="form-control" name="input" ng-model="item.indexx" required ng-trim="false"></td>
+                        <td><input type="text" class="form-control" [(ngModel)]="item.indexx" required ng-trim="false"></td>
                     </tr>
                     <tr>
                         <td>Street:</td>
-                        <td><input type="text" class="form-control" name="input" ng-model="item.street" required ng-trim="false"></td>
+                        <td><input type="text" class="form-control" [(ngModel)]="item.street" required ng-trim="false"></td>
                     </tr>
                     <tr>
                         <td>Houses:</td>
-                        <td><input type="text" class="form-control" name="input" ng-model="item.houses" required ng-trim="false"></td>
+                        <td><input type="text" class="form-control" [(ngModel)]="item.houses" required ng-trim="false"></td>
                     </tr>
                     <tr></tr>
                     <tr>
@@ -143,10 +143,11 @@
                 <h4 class="modal-title">Find</h4>
             </div>
             <div class="modal-body modal-center">
+                <span class="error">{{error}}</span>
                 <table>
                     <tr>
                         <td>Id:</td>
-                        <td><input type="text" class="form-control" name="input" ng-model="item.id" required ng-trim="false"></td>
+                        <td><input type="text" class="form-control" [(ngModel)]="item.id" required ng-trim="false"></td>
                     </tr>
                     <tr>
                         <td>Region:</td>

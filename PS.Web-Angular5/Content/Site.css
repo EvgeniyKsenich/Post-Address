@@ -22,3 +22,29 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.table-custom {
+    display: inline-block;
+    overflow: scroll;
+    max-height: 400px;
+}
+
+.modal-center {
+}
+
+.right {
+    text-align: right;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+td {
+    word-wrap: break-word;
+}
+
+.error{
+    color:red;
+}

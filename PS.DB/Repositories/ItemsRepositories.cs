@@ -81,8 +81,11 @@ namespace PS.DB.Repositories
             using (AddressEntities db = new AddressEntities())
             {
                 var items = db.Items.Where(element => element.id == id).SingleOrDefault();
-                db.Entry(items).State = EntityState.Deleted;
-                result = db.SaveChanges();
+                if (items != null)
+                {
+                    db.Entry(items).State = EntityState.Deleted;
+                    result = db.SaveChanges();
+                }
             }
             return result;
         }

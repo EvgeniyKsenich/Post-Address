@@ -214,6 +214,5 @@ D:\Proj\Post-Address\PS.Business\bin\ru\System.Web.Razor.resources.dll
 D:\Proj\Post-Address\PS.Business\bin\ru\System.Web.WebPages.resources.dll
 D:\Proj\Post-Address\PS.Business\bin\ru\System.Web.WebPages.Deployment.resources.dll
 D:\Proj\Post-Address\PS.Business\bin\ru\System.Web.WebPages.Razor.resources.dll
-D:\Proj\Post-Address\PS.Business\obj\Debug\PS.Business.csprojResolveAssemblyReference.cache
 D:\Proj\Post-Address\PS.Business\obj\Debug\PS.Business.dll
 D:\Proj\Post-Address\PS.Business\obj\Debug\PS.Business.pdb
