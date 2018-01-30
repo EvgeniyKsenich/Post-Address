@@ -10,7 +10,7 @@
           <ScalarProperty Name="city" ColumnName="city" />
           <ScalarProperty Name="indexx" ColumnName="indexx" />
           <ScalarProperty Name="street" ColumnName="street" />
-          <ScalarProperty Name="houses" ColumnName="houses" />
+          <ScalarProperty Name="house" ColumnName="house" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

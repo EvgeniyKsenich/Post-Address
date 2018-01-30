@@ -10,7 +10,9 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
 var http_1 = require("@angular/common/http");
+var common_1 = require("@angular/common");
 var forms_1 = require("@angular/forms");
+var core_2 = require("@agm/core");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -18,7 +20,13 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule, http_1.HttpClientModule, forms_1.FormsModule],
+        imports: [platform_browser_1.BrowserModule, http_1.HttpClientModule, forms_1.FormsModule, common_1.CommonModule,
+            core_2.AgmCoreModule.forRoot({
+                apiKey: 'AIzaSyBJrW0TAFIud-Ulcf-8w9ZJO3nZQj5BJO0',
+                libraries: ['places'],
+                language: 'uk',
+                region: 'UA'
+            })],
         declarations: [app_component_1.AppComponent],
         bootstrap: [app_component_1.AppComponent]
     })

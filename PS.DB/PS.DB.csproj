@@ -175,8 +175,8 @@
   <ItemGroup>
     <Content Include="AddressModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>AddressModel.Context.cs</LastGenOutput>
       <DependentUpon>AddressModel.edmx</DependentUpon>
+      <LastGenOutput>AddressModel.Context.cs</LastGenOutput>
     </Content>
     <Content Include="AddressModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -192,18 +192,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="AddressModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>AddressModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="AddressModel.edmx.diagram">
-      <DependentUpon>AddressModel.edmx</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
@@ -213,6 +202,17 @@
       <Project>{76778ddb-7510-44de-8891-d90b47380e8a}</Project>
       <Name>PS.Business</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="AddressModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AddressModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AddressModel.edmx.diagram">
+      <DependentUpon>AddressModel.edmx</DependentUpon>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

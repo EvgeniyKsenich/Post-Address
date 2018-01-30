@@ -216,3 +216,4 @@ D:\Proj\Post-Address\PS.Business\bin\ru\System.Web.WebPages.Deployment.resources
 D:\Proj\Post-Address\PS.Business\bin\ru\System.Web.WebPages.Razor.resources.dll
 D:\Proj\Post-Address\PS.Business\obj\Debug\PS.Business.dll
 D:\Proj\Post-Address\PS.Business\obj\Debug\PS.Business.pdb
+D:\Proj\Post-Address\PS.Business\obj\Debug\PS.Business.csprojResolveAssemblyReference.cache

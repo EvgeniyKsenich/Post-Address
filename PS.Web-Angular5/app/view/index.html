@@ -8,9 +8,10 @@
         <th>Region</th>
         <th>District</th>
         <th>City</th>
-        <th>Indexx</th>
+        <th>Index</th>
         <th>Street</th>
-        <th>Houses</th>
+        <th>House</th>
+        <td></td>
     </tr>
     <tr *ngFor="let m of List">
         <td><input type="button" class="btn btn-primary" value="Delete" (click)="Delete(m)" id="delete_{{m.id}}" /></td>
@@ -21,12 +22,24 @@
         <td>{{m.city}}</td>
         <td>{{m.indexx}}</td>
         <td>{{m.street}}</td>
-        <td>{{m.houses}}</td>
+        <td>{{m.house}}</td>
+        <td><input type="button" class="btn btn-primary" value="Find on map" (click)="FindOnMap(m)" id="FindOnMap_{{m.id}}" data-toggle="collapse" data-target="#mapCollapse"/></td>
     </tr>
 </table>
 <input type="button" class="btn btn-primary" value="next" (click)="GetNext()" />
 
-
+<!-- Collapse -->
+<div id="mapCollapse" class="collapse">
+    <span>{{SearchResult}}</span>
+    <div class="map">
+        <agm-map [latitude]="lat" [longitude]="lng">
+            <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+        </agm-map>
+        <button id="mapCollapseClose" type="button" class="btn" value="next" (click)="CloseMap()">
+            <span class="glyphicon glyphicon-remove"></span>
+        </button>
+    </div>
+</div>
 
 <!-- Modal -->
 <!-- Edit -->
@@ -64,8 +77,8 @@
                         <td><input type="text" class="form-control" [(ngModel)]="item.street" required ng-trim="false"></td>
                     </tr>
                     <tr>
-                        <td>Houses:</td>
-                        <td><input type="text" class="form-control" [(ngModel)]="item.houses" required ng-trim="false"></td>
+                        <td>House:</td>
+                        <td><input type="text" class="form-control" [(ngModel)]="item.house" required ng-trim="false"></td>
                     </tr>
                     <tr></tr>
                     <tr>
@@ -115,8 +128,8 @@
                         <td><input type="text" class="form-control" [(ngModel)]="item.street" required ng-trim="false"></td>
                     </tr>
                     <tr>
-                        <td>Houses:</td>
-                        <td><input type="text" class="form-control" [(ngModel)]="item.houses" required ng-trim="false"></td>
+                        <td>House:</td>
+                        <td><input type="text" class="form-control" [(ngModel)]="item.house" required ng-trim="false"></td>
                     </tr>
                     <tr></tr>
                     <tr>
@@ -170,8 +183,8 @@
                         <td>{{item.street}}</td>
                     </tr>
                     <tr>
-                        <td>Houses:</td>
-                        <td>{{item.houses}}</td>
+                        <td>House:</td>
+                        <td>{{item.house}}</td>
                     </tr>
                     <tr></tr>
                     <tr>
@@ -186,3 +199,4 @@
         </div>
     </div>
 </div>
+

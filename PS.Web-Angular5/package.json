@@ -32,6 +32,8 @@
     "@angular/platform-browser": "~4.3.2",
     "@angular/platform-browser-dynamic": "~4.3.2",
     "@angular/router": "~4.3.2",
+    "angular2-google-maps": "0.17.0",
+    "@agm/core": "1.0.0-beta.2",
 
     "angular-in-memory-web-api": "~0.3.0",
     "systemjs": "0.19.40",

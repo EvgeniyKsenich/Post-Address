@@ -233,6 +233,7 @@
     <None Include=".bin\npm.cmd" />
     <Content Include="package.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\Custom\Map.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -285,7 +286,9 @@
     <TypeScriptCompile Include="app\app.module.ts" />
     <TypeScriptCompile Include="app\main.ts" />
     <TypeScriptCompile Include="app\models\Error.ts" />
+    <TypeScriptCompile Include="app\models\MapItem.ts" />
     <TypeScriptCompile Include="app\models\Item.ts" />
+    <TypeScriptCompile Include="app\Services\PositionService.ts" />
     <TypeScriptCompile Include="app\Services\ItemService.ts" />
   </ItemGroup>
   <ItemGroup>
@@ -328,6 +331,7 @@
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
+      <UserProperties package_1json__JSONSchema="" />
     </VisualStudio>
   </ProjectExtensions>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

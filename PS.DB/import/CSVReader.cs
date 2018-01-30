@@ -26,21 +26,32 @@ namespace PS.DB.import
                         counter++;
                         continue;
                     }
-                    try{
-                        List.Add(new Item() {
-                            region = values[0],
-                            district = values[1],
-                            city = values[2],
-                            indexx = values[3],
-                            street = values[4],
-                            houses = values[5]
-                        });
+                    try
+                    {
+                        var HouseList = values[5].Split(',');
+                        foreach (var house in HouseList)
+                        {
+                            List.Add(new Item()
+                            {
+                                region = values[0],
+                                district = values[1],
+                                city = values[2],
+                                indexx = values[3],
+                                street = values[4],
+                                house = house
+                            });
+                        }
+                        if (List.Count >= 15000)
+                        {
+                            break;
+                        }
+                        counter++;
                     }
-                    catch(Exception Exeption)
+                    catch (Exception Exeption)
                     {
 
                     }
-                    counter++;
+
                 }
             }
             return List;

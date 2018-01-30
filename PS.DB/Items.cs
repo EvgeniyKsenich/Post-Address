@@ -20,6 +20,6 @@ namespace PS.DB
         public string city { get; set; }
         public string indexx { get; set; }
         public string street { get; set; }
-        public string houses { get; set; }
+        public string house { get; set; }
     }
 }

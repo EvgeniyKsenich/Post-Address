@@ -10,7 +10,7 @@
     <Property Name="city" Type="String" MaxLength="36" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="indexx" Type="String" MaxLength="36" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="street" Type="String" MaxLength="36" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="houses" Type="String" MaxLength="400" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="house" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
   </EntityType>
   <EntityContainer Name="AddressEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Items" EntityType="Self.Items" />

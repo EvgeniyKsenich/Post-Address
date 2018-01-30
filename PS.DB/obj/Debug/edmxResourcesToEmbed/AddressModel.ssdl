@@ -10,7 +10,7 @@
     <Property Name="city" Type="varchar" MaxLength="36" Nullable="false" />
     <Property Name="indexx" Type="varchar" MaxLength="36" Nullable="false" />
     <Property Name="street" Type="varchar" MaxLength="36" Nullable="false" />
-    <Property Name="houses" Type="varchar" MaxLength="400" Nullable="false" />
+    <Property Name="house" Type="varchar" MaxLength="16" Nullable="false" />
   </EntityType>
   <EntityContainer Name="Хранилище AddressModelContainer">
     <EntitySet Name="Items" EntityType="Self.Items" Schema="dbo" store:Type="Tables" />

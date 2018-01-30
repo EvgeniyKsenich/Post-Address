@@ -5,5 +5,5 @@ export class Item {
     city: string;
     indexx: string;
     street: string;
-    houses: string;
+    house: string;
 }

@@ -15,7 +15,7 @@
           <Property Name="city" Type="varchar" MaxLength="36" Nullable="false" />
           <Property Name="indexx" Type="varchar" MaxLength="36" Nullable="false" />
           <Property Name="street" Type="varchar" MaxLength="36" Nullable="false" />
-          <Property Name="houses" Type="varchar" MaxLength="400" Nullable="false" />
+          <Property Name="house" Type="varchar" MaxLength="16" Nullable="false" />
         </EntityType>
         <EntityContainer Name="Хранилище AddressModelContainer">
           <EntitySet Name="Items" EntityType="Self.Items" Schema="dbo" store:Type="Tables" />
@@ -35,7 +35,7 @@
           <Property Name="city" Type="String" MaxLength="36" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="indexx" Type="String" MaxLength="36" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="street" Type="String" MaxLength="36" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="houses" Type="String" MaxLength="400" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="house" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
         </EntityType>
         <EntityContainer Name="AddressEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Items" EntityType="Self.Items" />
@@ -55,7 +55,7 @@
                 <ScalarProperty Name="city" ColumnName="city" />
                 <ScalarProperty Name="indexx" ColumnName="indexx" />
                 <ScalarProperty Name="street" ColumnName="street" />
-                <ScalarProperty Name="houses" ColumnName="houses" />
+                <ScalarProperty Name="house" ColumnName="house" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

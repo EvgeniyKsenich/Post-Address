@@ -23,13 +23,16 @@ textarea {
     max-width: 280px;
 }
 
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+agm-map {
+    height: 300px;
+}
+
 .table-custom {
     display: inline-block;
     overflow: scroll;
     max-height: 400px;
-}
-
-.modal-center {
 }
 
 .right {
@@ -45,6 +48,28 @@ td {
     word-wrap: break-word;
 }
 
-.error{
-    color:red;
+.error {
+    color: red;
+}
+
+#mapCollapse {
+    position: absolute;
+    width: 95%;
+    left: 2.5%;
+    top: 80px;
+    border: 15px solid #808489;
+    background-color: white;
+}
+
+#mapCollapseClose {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 20px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    padding: 2px;
+    background-color: black;
+    color: white;
 }

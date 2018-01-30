@@ -19,6 +19,6 @@ namespace PS.Business.Enteties
 
         public string street { get; set; }
 
-        public string houses { get; set; }
+        public string house { get; set; }
     }
 }

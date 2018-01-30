@@ -10,11 +10,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var core_2 = require("@angular/core");
+var core_3 = require("@agm/core");
 var Item_1 = require("./models/Item");
 var ItemService_1 = require("./Services/ItemService");
+var PositionService_1 = require("./Services/PositionService");
 var AppComponent = (function () {
-    function AppComponent(itemService) {
+    function AppComponent(itemService, positionService, mapsAPILoader, ngZone) {
         this.itemService = itemService;
+        this.positionService = positionService;
+        this.mapsAPILoader = mapsAPILoader;
+        this.ngZone = ngZone;
+        this.lat = 51.678418;
+        this.lng = 7.809007;
         this.List = new Array();
         this.item = new Item_1.Item();
         this.Clearitem();
@@ -37,6 +45,47 @@ var AppComponent = (function () {
         }
         this.item = this.List[index];
         $("#Edit").modal();
+    };
+    AppComponent.prototype.CloseMap = function () {
+        $('#mapCollapse').collapse("hide");
+    };
+    AppComponent.prototype.FindOnMap = function (item) {
+        var _this = this;
+        //item.region item.district item.city item.street item.house
+        this.positionService.findFromAddress(item.region + "," + item.district + "," + item.city + "," + item.street + item.house).subscribe(function (data) {
+            console.log(data);
+            if (data.results[0] != null) {
+                _this.SearchResult = "Accurate to the house";
+                _this.lat = data.results[0].geometry.location.lat;
+                _this.lng = data.results[0].geometry.location.lng;
+            }
+            else {
+                //item.region + "," + item.district + "," + item.city + "," + item.street
+                _this.positionService.findFromAddress(item.region + "," + item.district + "," + item.city + "," + item.street).subscribe(function (data) {
+                    console.log(data);
+                    if (data.results[0] != null) {
+                        _this.SearchResult = "Accurate to the street";
+                        _this.lat = data.results[0].geometry.location.lat;
+                        _this.lng = data.results[0].geometry.location.lng;
+                    }
+                    else {
+                        //item.region + "," + item.district + "," + item.city
+                        _this.positionService.findFromAddress(item.region + "," + item.district + "," + item.city).subscribe(function (data) {
+                            console.log(data);
+                            if (data.results[0] != null) {
+                                _this.SearchResult = "Accurate to the city";
+                                _this.lat = data.results[0].geometry.location.lat;
+                                _this.lng = data.results[0].geometry.location.lng;
+                            }
+                            else {
+                                console.log('Map Searching error');
+                                _this.SearchResult = "Search error";
+                            }
+                        });
+                    }
+                });
+            }
+        });
     };
     AppComponent.prototype.Find = function () {
         var _this = this;
@@ -85,7 +134,7 @@ var AppComponent = (function () {
         this.item.city = "";
         this.item.indexx = "";
         this.item.street = "";
-        this.item.houses = "";
+        this.item.house = "";
     };
     AppComponent.prototype.ClearError = function () {
         this.error = "";
@@ -97,9 +146,12 @@ AppComponent = __decorate([
         selector: 'my-app',
         templateUrl: "./view/index.html",
         styleUrls: ['/../Content/Site.css', './../Content/bootstrap.min.css'],
-        providers: [ItemService_1.ItemService]
+        providers: [ItemService_1.ItemService, PositionService_1.PositionService]
     }),
-    __metadata("design:paramtypes", [ItemService_1.ItemService])
+    __metadata("design:paramtypes", [ItemService_1.ItemService,
+        PositionService_1.PositionService,
+        core_3.MapsAPILoader,
+        core_2.NgZone])
 ], AppComponent);
 exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map
