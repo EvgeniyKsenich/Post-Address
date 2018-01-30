@@ -13,7 +13,6 @@ import { ItemService } from './Services/ItemService';
 import { PositionService } from './Services/PositionService';
 
 
-
 declare var $: any;
 declare var google: any;
 
@@ -25,8 +24,8 @@ declare var google: any;
 })
 
 export class AppComponent implements OnInit {
-    lat: number = 51.678418;
-    lng: number = 7.809007;
+    lat: number = 50.401699;
+    lng: number = 30.252512;
     List = new Array<Item>();
     public item: Item;
     public error: string;

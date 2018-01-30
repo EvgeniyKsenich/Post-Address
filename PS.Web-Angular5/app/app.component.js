@@ -21,8 +21,8 @@ var AppComponent = (function () {
         this.positionService = positionService;
         this.mapsAPILoader = mapsAPILoader;
         this.ngZone = ngZone;
-        this.lat = 51.678418;
-        this.lng = 7.809007;
+        this.lat = 50.401699;
+        this.lng = 30.252512;
         this.List = new Array();
         this.item = new Item_1.Item();
         this.Clearitem();
