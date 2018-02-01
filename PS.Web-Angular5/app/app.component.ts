@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
-import { Input, OnInit, AfterViewChecked, NgZone } from '@angular/core';
+import { Input, OnInit, AfterViewChecked, NgZone, ViewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Observable } from "rxjs/Observable";
-import { AgmCoreModule, MapsAPILoader } from '@agm/core';
+import { AgmCoreModule, AgmMap } from '@agm/core';
 
 import { Item } from './models/Item';
 import { Error } from './models/Error';
@@ -31,9 +31,10 @@ export class AppComponent implements OnInit {
     public error: string;
     public SearchResult: string;
 
+    @ViewChild('maps') map: AgmMap;
+
     constructor(private itemService: ItemService,
                 private positionService: PositionService,
-                private mapsAPILoader: MapsAPILoader,
                 private ngZone: NgZone) {
         this.item = new Item();
         this.Clearitem();
@@ -44,7 +45,9 @@ export class AppComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.itemService.getNext().subscribe((data: Array<Item>) => this.List = data);
+        this.itemService.getNext().subscribe((data: Array<Item>) => {
+            this.List = data
+        });
     }
 
     public EditNew(id: number) {
@@ -65,13 +68,13 @@ export class AppComponent implements OnInit {
     }
 
     FindOnMap(item: Item) {
+        $('#mapCollapse').collapse("show");
         //item.region item.district item.city item.street item.house
         this.positionService.findFromAddress(item.region+","+item.district+","+item.city+","+item.street+item.house).subscribe((data: any) => {
             console.log(data);
             if (data.results[0] != null) {
                 this.SearchResult = "Accurate to the house";
-                this.lat = data.results[0].geometry.location.lat;
-                this.lng = data.results[0].geometry.location.lng;
+                this.setCoordinate(data.results[0].geometry.location.lat, data.results[0].geometry.location.lng);
             }
             else {
                 //item.region + "," + item.district + "," + item.city + "," + item.street
@@ -79,8 +82,7 @@ export class AppComponent implements OnInit {
                     console.log(data);
                     if (data.results[0] != null) {
                         this.SearchResult = "Accurate to the street";
-                        this.lat = data.results[0].geometry.location.lat;
-                        this.lng = data.results[0].geometry.location.lng;
+                        this.setCoordinate(data.results[0].geometry.location.lat, data.results[0].geometry.location.lng);
                     }
                     else {
                         //item.region + "," + item.district + "," + item.city
@@ -88,8 +90,7 @@ export class AppComponent implements OnInit {
                             console.log(data);
                             if (data.results[0] != null) {
                                 this.SearchResult = "Accurate to the city";
-                                this.lat = data.results[0].geometry.location.lat;
-                                this.lng = data.results[0].geometry.location.lng;
+                                this.setCoordinate(data.results[0].geometry.location.lat, data.results[0].geometry.location.lng);
                             }
                             else {
                                 console.log('Map Searching error');
@@ -102,6 +103,17 @@ export class AppComponent implements OnInit {
 
             }
         });
+
+        this.InitMap();
+    }
+
+    InitMap() {
+        this.map.triggerResize();
+    }
+
+    setCoordinate(lat: number, lng:number) {
+        this.lat = lat;
+        this.lng = lng;
     }
 
     Find() {

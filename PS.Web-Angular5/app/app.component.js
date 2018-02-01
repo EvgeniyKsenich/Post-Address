@@ -16,10 +16,9 @@ var Item_1 = require("./models/Item");
 var ItemService_1 = require("./Services/ItemService");
 var PositionService_1 = require("./Services/PositionService");
 var AppComponent = (function () {
-    function AppComponent(itemService, positionService, mapsAPILoader, ngZone) {
+    function AppComponent(itemService, positionService, ngZone) {
         this.itemService = itemService;
         this.positionService = positionService;
-        this.mapsAPILoader = mapsAPILoader;
         this.ngZone = ngZone;
         this.lat = 50.401699;
         this.lng = 30.252512;
@@ -33,7 +32,9 @@ var AppComponent = (function () {
     };
     AppComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.itemService.getNext().subscribe(function (data) { return _this.List = data; });
+        this.itemService.getNext().subscribe(function (data) {
+            _this.List = data;
+        });
     };
     AppComponent.prototype.EditNew = function (id) {
         var index = -1;
@@ -51,13 +52,13 @@ var AppComponent = (function () {
     };
     AppComponent.prototype.FindOnMap = function (item) {
         var _this = this;
+        $('#mapCollapse').collapse("show");
         //item.region item.district item.city item.street item.house
         this.positionService.findFromAddress(item.region + "," + item.district + "," + item.city + "," + item.street + item.house).subscribe(function (data) {
             console.log(data);
             if (data.results[0] != null) {
                 _this.SearchResult = "Accurate to the house";
-                _this.lat = data.results[0].geometry.location.lat;
-                _this.lng = data.results[0].geometry.location.lng;
+                _this.setCoordinate(data.results[0].geometry.location.lat, data.results[0].geometry.location.lng);
             }
             else {
                 //item.region + "," + item.district + "," + item.city + "," + item.street
@@ -65,8 +66,7 @@ var AppComponent = (function () {
                     console.log(data);
                     if (data.results[0] != null) {
                         _this.SearchResult = "Accurate to the street";
-                        _this.lat = data.results[0].geometry.location.lat;
-                        _this.lng = data.results[0].geometry.location.lng;
+                        _this.setCoordinate(data.results[0].geometry.location.lat, data.results[0].geometry.location.lng);
                     }
                     else {
                         //item.region + "," + item.district + "," + item.city
@@ -74,8 +74,7 @@ var AppComponent = (function () {
                             console.log(data);
                             if (data.results[0] != null) {
                                 _this.SearchResult = "Accurate to the city";
-                                _this.lat = data.results[0].geometry.location.lat;
-                                _this.lng = data.results[0].geometry.location.lng;
+                                _this.setCoordinate(data.results[0].geometry.location.lat, data.results[0].geometry.location.lng);
                             }
                             else {
                                 console.log('Map Searching error');
@@ -86,6 +85,14 @@ var AppComponent = (function () {
                 });
             }
         });
+        this.InitMap();
+    };
+    AppComponent.prototype.InitMap = function () {
+        this.map.triggerResize();
+    };
+    AppComponent.prototype.setCoordinate = function (lat, lng) {
+        this.lat = lat;
+        this.lng = lng;
     };
     AppComponent.prototype.Find = function () {
         var _this = this;
@@ -141,6 +148,10 @@ var AppComponent = (function () {
     };
     return AppComponent;
 }());
+__decorate([
+    core_2.ViewChild('maps'),
+    __metadata("design:type", core_3.AgmMap)
+], AppComponent.prototype, "map", void 0);
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
@@ -150,7 +161,6 @@ AppComponent = __decorate([
     }),
     __metadata("design:paramtypes", [ItemService_1.ItemService,
         PositionService_1.PositionService,
-        core_3.MapsAPILoader,
         core_2.NgZone])
 ], AppComponent);
 exports.AppComponent = AppComponent;

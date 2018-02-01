@@ -23,7 +23,8 @@
         <td>{{m.indexx}}</td>
         <td>{{m.street}}</td>
         <td>{{m.house}}</td>
-        <td><input type="button" class="btn btn-primary" value="Find on map" (click)="FindOnMap(m)" id="FindOnMap_{{m.id}}" data-toggle="collapse" data-target="#mapCollapse"/></td>
+        <!--<td><input type="button" class="btn btn-primary" value="Find on map" (click)="FindOnMap(m)" id="FindOnMap_{{m.id}}" data-toggle="collapse" data-target="#mapCollapse" /></td>-->
+        <td><input type="button" class="btn btn-primary" value="Find on map" (click)="FindOnMap(m)" id="FindOnMaps_{{m.id}}"/></td>
     </tr>
 </table>
 <input type="button" class="btn btn-primary" value="next" (click)="GetNext()" />
@@ -32,7 +33,7 @@
 <div id="mapCollapse" class="collapse">
     <span>{{SearchResult}}</span>
     <div class="map">
-        <agm-map [latitude]="lat" [longitude]="lng">
+        <agm-map #maps [latitude]="lat" [longitude]="lng">
             <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
         </agm-map>
         <button id="mapCollapseClose" type="button" class="btn" value="next" (click)="CloseMap()">
