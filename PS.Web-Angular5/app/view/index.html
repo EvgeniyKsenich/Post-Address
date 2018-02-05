@@ -24,7 +24,7 @@
         <td>{{m.street}}</td>
         <td>{{m.house}}</td>
         <!--<td><input type="button" class="btn btn-primary" value="Find on map" (click)="FindOnMap(m)" id="FindOnMap_{{m.id}}" data-toggle="collapse" data-target="#mapCollapse" /></td>-->
-        <td><input type="button" class="btn btn-primary" value="Find on map" (click)="FindOnMap(m)" id="FindOnMaps_{{m.id}}"/></td>
+        <td><input type="button" class="btn btn-primary" value="Find on map" (click)="FindOnMap(m)" id="FindOnMaps_{{m.id}}" /></td>
     </tr>
 </table>
 <input type="button" class="btn btn-primary" value="next" (click)="GetNext()" />
@@ -51,7 +51,7 @@
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h4 class="modal-title">Edit</h4>
             </div>
-            <div class="modal-body modal-center">
+            <div class="modal-body modal-center form-group">
                 <table>
                     <tr>
                         <td>Id:</td>
@@ -59,32 +59,35 @@
                     </tr>
                     <tr>
                         <td>Region:</td>
-                        <td><input type="text" class="form-control" [(ngModel)]="item.region" required></td>
+                        <td><input required type="text" class="form-control" name="region" [(ngModel)]="item.region" #region="ngModel"></td>
                     </tr>
                     <tr>
                         <td>District:</td>
-                        <td><input type="text" class="form-control" [(ngModel)]="item.district" required></td>
+                        <td><input required type="text" class="form-control" name="district" [(ngModel)]="item.district" #district="ngModel"></td>
                     </tr>
                     <tr>
                         <td>City:</td>
-                        <td><input type="text" class="form-control" [(ngModel)]="item.city" requireds></td>
+                        <td><input required type="text" class="form-control" [(ngModel)]="item.city" #Scity="ngModel"></td>
                     </tr>
                     <tr>
                         <td>Index:</td>
-                        <td><input type="text" class="form-control" [(ngModel)]="item.indexx" required ng-trim="false"></td>
+                        <td><input type="number" class="form-control" [(ngModel)]="item.indexx" required #indexx="ngModel"></td>
                     </tr>
                     <tr>
                         <td>Street:</td>
-                        <td><input type="text" class="form-control" [(ngModel)]="item.street" required ng-trim="false"></td>
+                        <td><input type="text" class="form-control" [(ngModel)]="item.street" required #street="ngModel"></td>
                     </tr>
                     <tr>
                         <td>House:</td>
-                        <td><input type="text" class="form-control" [(ngModel)]="item.house" required ng-trim="false"></td>
+                        <td><input type="number" class="form-control" [(ngModel)]="item.house" required #house="ngModel"></td>
                     </tr>
                     <tr></tr>
                     <tr>
                         <td><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></td>
-                        <td class="right"><input type="button" class="btn btn-primary" value="Edit" (click)="SaveEdit($event)" id="SaveEdit" /></td>
+                        <td class="right">
+                            <input [disabled]="Scity.invalid || region.invalid || district.invalid || indexx.invalid || street.invalid || house.invalid"
+                                   type="button" class="btn btn-primary" value="Edit" (click)="SaveEdit($event)" id="SaveEdit" />
+                        </td>
                     </tr>
                 </table>
 
@@ -106,39 +109,41 @@
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h4 class="modal-title">Add</h4>
             </div>
-            <div class="modal-body modal-center">
+            <div class="modal-body modal-center form-group">
                 <table>
                     <tr>
                         <td>Region:</td>
-                        <td><input type="text" class="form-control" [(ngModel)]="item.region" required ng-trim="false"></td>
+                        <td><input required type="text" class="form-control" name="region" [(ngModel)]="item.region" #region="ngModel"></td>
                     </tr>
                     <tr>
                         <td>District:</td>
-                        <td><input type="text" class="form-control" [(ngModel)]="item.district" required ng-trim="false"></td>
+                        <td><input required type="text" class="form-control" name="district" [(ngModel)]="item.district" #district="ngModel"></td>
                     </tr>
                     <tr>
                         <td>City:</td>
-                        <td><input type="text" class="form-control" [(ngModel)]="item.city" required ng-trim="false"></td>
+                        <td><input type="text" class="form-control" [(ngModel)]="item.city" requireds #Scity="ngModel"></td>
                     </tr>
                     <tr>
                         <td>Index:</td>
-                        <td><input type="text" class="form-control" [(ngModel)]="item.indexx" required ng-trim="false"></td>
+                        <td><input type="number" class="form-control" [(ngModel)]="item.indexx" required #indexx="ngModel"></td>
                     </tr>
                     <tr>
                         <td>Street:</td>
-                        <td><input type="text" class="form-control" [(ngModel)]="item.street" required ng-trim="false"></td>
+                        <td><input type="text" class="form-control" [(ngModel)]="item.street" required #street="ngModel"></td>
                     </tr>
                     <tr>
                         <td>House:</td>
-                        <td><input type="text" class="form-control" [(ngModel)]="item.house" required ng-trim="false"></td>
+                        <td><input type="number" class="form-control" [(ngModel)]="item.house" required #house="ngModel"></td>
                     </tr>
                     <tr></tr>
                     <tr>
                         <td><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></td>
-                        <td class="right"><input type="button" class="btn btn-primary" value="Edit" (click)="Add($event)" id="AddNew" /></td>
+                        <td class="right">
+                            <input [disabled]="region.invalid || district.invalid || Scity.invalid || indexx.invalid || street.invalid || house.invalid"
+                                   type="button" class="btn btn-primary" value="Edit" (click)="SaveEdit($event)" id="SaveEdit" />
+                        </td>
                     </tr>
                 </table>
-
             </div>
             <div class="modal-footer">
             </div>
@@ -161,7 +166,7 @@
                 <table>
                     <tr>
                         <td>Id:</td>
-                        <td><input type="text" class="form-control" [(ngModel)]="item.id" required ng-trim="false"></td>
+                        <td><input type="text" class="form-control" [(ngModel)]="item.id" required #id="ngModel"></td>
                     </tr>
                     <tr>
                         <td>Region:</td>
@@ -190,7 +195,9 @@
                     <tr></tr>
                     <tr>
                         <td></td>
-                        <td class="right"><input type="button" class="btn btn-primary" value="Find" (click)="Find($event)" id="FindNew" /></td>
+                        <td class="right">
+                            <input [disabled]="id.invalid" type="button" class="btn btn-primary" value="Find" (click)="Find($event)" id="FindNew" />
+                        </td>
                     </tr>
                 </table>
             </div>

@@ -12,9 +12,7 @@ export class ItemService {
         headers: new HttpHeaders({ 'Content-Type': 'application/json' })
     };
      
-    constructor(private http: HttpClient) {
-
-    }
+    constructor(private http: HttpClient) {   }
 
     getNext() {
         var result = this.http.get<Array<Item>>('/api/Address?count=' + this.Size + "&start=" + this.Current);

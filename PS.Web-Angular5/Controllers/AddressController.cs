@@ -25,7 +25,6 @@ namespace PS.Web_Angular5.Controllers
                 count = 1000;
             if (start < 0)
                 start = 0;
-
             var List = ItemRepositories.GetList().Skip(start).Take(count);
             return List;
         }
