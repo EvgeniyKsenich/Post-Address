@@ -163,6 +163,7 @@ export class AppComponent implements OnInit {
     }
 
     Clearitem() {
+        this.item = new Item();
         this.item.id = 0;
         this.item.region = "";
         this.item.district = "";

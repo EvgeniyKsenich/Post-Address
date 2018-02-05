@@ -135,6 +135,7 @@ var AppComponent = (function () {
         $("#Find").modal();
     };
     AppComponent.prototype.Clearitem = function () {
+        this.item = new Item_1.Item();
         this.item.id = 0;
         this.item.region = "";
         this.item.district = "";
